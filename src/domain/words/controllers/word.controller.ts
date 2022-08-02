@@ -34,7 +34,7 @@ export class WordController {
 
   @Get('top-10/in-titles-last-600')
   async getTopTenMostOccurringWordsInTitlesLast600(): Promise<
-    IResponseHelper<string[]>
+    IResponseHelper<[string, number][]>
   > {
     const result =
       await this.wordService.getTopTenMostOccurringWordsInTitlesLast600();

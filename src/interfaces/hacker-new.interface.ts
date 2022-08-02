@@ -9,3 +9,12 @@ export interface IHackerNewsStory {
   type: string;
   url: string;
 }
+
+export interface IHackerNewsUser {
+  about: string;
+  created: number;
+  delay: number;
+  id: string;
+  karma: number;
+  submitted: number[];
+}
